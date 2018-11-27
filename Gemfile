@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'active_model_serializers', '~> 0.10.0'
 gem 'enumerize'
 gem 'trestle'
 gem 'trestle-active_storage'
@@ -55,6 +56,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
+  gem 'annotate'
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'fasterer'

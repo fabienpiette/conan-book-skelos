@@ -1,19 +1,15 @@
 # frozen_string_literal: true
 
-require 'test_helper'
-
-class ScenarioTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class DiceSerializer < ApplicationSerializer
+  attributes :kind
 end
 
 # == Schema Information
 #
-# Table name: scenarios
+# Table name: dices
 #
 #  id         :bigint(8)        not null, primary key
-#  name       :string
+#  kind       :string           default("yellow")
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

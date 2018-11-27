@@ -20,6 +20,7 @@ To get the Rails server running locally:
 ## Dependencies
 
 - [trestle](https://github.com/TrestleAdmin/trestle) - A modern, responsive admin framework for Ruby on Rails
+- [active_model_serializers](https://github.com/rails-api/active_model_serializers) - ActiveModel::Serializer implementation and Rails hooks
 
 ## Folders
 

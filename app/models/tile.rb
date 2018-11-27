@@ -16,8 +16,8 @@ class Tile < ApplicationRecord
   # Enumerize
   #
   extend Enumerize
-  enumerize :kind, in: %i[unit event]
-  enumerize :base_color, in: COLORS.keys
+  enumerize :kind, in: %i[unit event], default: :unit
+  enumerize :base_color, in: COLORS.keys, default: :white
 
   #
   # Active Storage
@@ -27,6 +27,8 @@ class Tile < ApplicationRecord
   #
   # Validations
   #
+  validates :kind,
+            presence: true
 
   #
   # Associations
@@ -88,10 +90,11 @@ end
 # Table name: tiles
 #
 #  id                 :bigint(8)        not null, primary key
+#  type               :string
 #  name               :string
 #  base_color         :string
-#  base_movement      :integer
-#  armor              :integer
+#  base_movement      :integer          default(0), not null
+#  armor              :integer          default(0)
 #  reinforcement_cost :integer          default(0)
 #  base_health_point  :integer          default(1)
 #  kind               :string           default("unit")

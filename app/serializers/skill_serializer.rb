@@ -1,11 +1,8 @@
 # frozen_string_literal: true
 
-require 'test_helper'
-
-class SkillTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class SkillSerializer < ApplicationSerializer
+  attributes :name,
+             :description
 end
 
 # == Schema Information

@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 Trestle.resource(:tiles) do
   menu do
-    item :tiles, icon: "fa fa-star"
+    item :tiles, icon: 'fa fa-star'
   end
 
   active_storage_fields do

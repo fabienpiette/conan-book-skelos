@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 Trestle.resource(:scenarios) do
   menu do
-    item :scenarios, icon: "fa fa-star"
+    item :scenarios, icon: 'fa fa-star'
   end
 
   # Customize the table columns shown on the index view.

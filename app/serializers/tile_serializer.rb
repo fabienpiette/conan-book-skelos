@@ -1,14 +1,14 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# frozen_string_literal: true
 
-# This model initially had no columns defined. If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-# column: value
+class TileSerializer < ApplicationSerializer
+  attributes :name,
+             :base_color,
+             :base_movement,
+             :armor,
+             :reinforcement_cost,
+             :base_health_point,
+             :kind
+end
 
 # == Schema Information
 #

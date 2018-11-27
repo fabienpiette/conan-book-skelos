@@ -1,11 +1,7 @@
 # frozen_string_literal: true
 
-require 'test_helper'
-
-class ScenarioTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class ScenarioSerializer < ApplicationSerializer
+  attributes :name
 end
 
 # == Schema Information
