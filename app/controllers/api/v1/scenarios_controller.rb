@@ -1,8 +1,14 @@
 # frozen_string_literal: true
 
 class Api::V1::ScenariosController < ApiController
+  #
+  # FetcheableOnApi
+  #
+  sort_by :id
+  filter_by :name
+
   def index
-    render json: Scenario.all
+    render json: apply_fetcheable(Scenario.all)
   end
 
   def show

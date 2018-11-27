@@ -39,6 +39,7 @@ gem 'active_model_serializers', '~> 0.10.0'
 gem 'enumerize'
 gem 'trestle'
 gem 'trestle-active_storage'
+gem 'fetcheable_on_api'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

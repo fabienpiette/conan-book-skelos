@@ -1,8 +1,14 @@
 # frozen_string_literal: true
 
 class Api::V1::TilesController < ApiController
+  #
+  # FetcheableOnApi
+  #
+  sort_by :id
+  filter_by :name
+
   def index
-    render json: Tile.all
+    render json: apply_fetcheable(Tile.all)
   end
 
   def show

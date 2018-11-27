@@ -99,6 +99,8 @@ GEM
     fasterer (0.4.1)
       colorize (~> 0.7)
       ruby_parser (~> 3.11.0)
+    fetcheable_on_api (0.1.6)
+      activesupport (>= 4.1)
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -269,6 +271,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   enumerize
   fasterer
+  fetcheable_on_api
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)

@@ -22,6 +22,7 @@ To get the Rails server running locally:
 
 - [trestle](https://github.com/TrestleAdmin/trestle) - A modern, responsive admin framework for Ruby on Rails
 - [active_model_serializers](https://github.com/rails-api/active_model_serializers) - ActiveModel::Serializer implementation and Rails hooks
+- [FetcheableOnApi](https://github.com/fabienpiette/fetcheable_on_api) - A controller filters engine gem based on jsonapi spec.
 
 ## Folders
 
